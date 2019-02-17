@@ -13,6 +13,6 @@ public class WebRestController {
 
 	@GetMapping("/health")
 	public String health() {
-		return "Service works well ";
+		return "Service works well";
 	}
 }
