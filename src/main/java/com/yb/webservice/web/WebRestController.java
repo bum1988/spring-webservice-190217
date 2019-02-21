@@ -1,18 +1,19 @@
 package com.yb.webservice.web;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import com.yb.webservice.Response;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class WebRestController {
 
-	@GetMapping("/hello")
+	@RequestMapping("/")
 	public String hello() {
-		return "HelloWorld";
+		return "Hello KaKao Team!!";
 	}
 
-	@GetMapping("/health")
-	public String health() {
-		return "Service works well";
+	@RequestMapping("/health")
+	public Response healthCheck() {
+		return new Response("success", "It works well!!");
 	}
 }
