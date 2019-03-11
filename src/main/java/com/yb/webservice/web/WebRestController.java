@@ -9,7 +9,7 @@ public class WebRestController {
 
 	@RequestMapping("/")
 	public String hello() {
-		return "Hello KaKao Team!!";
+		return "Hello KaKaoPay Team!!";
 	}
 
 	@RequestMapping("/health")
